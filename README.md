@@ -57,6 +57,6 @@
 Студенты группы 23-ЗИЭ-1
 
 <br>
-<a href="./index.html">
+<a href="https://vanadisodr.github.io/kolbasenko/" target="_blank" rel="noopener noreferrer">
   <img src="https://img.shields.io/badge/-Запустить_игру-brightgreen?style=for-the-badge" alt="Запустить">
 </a>
