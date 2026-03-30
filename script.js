@@ -70,17 +70,8 @@ class MemoryGame {
         card.dataset.symbol = symbol;
         card.dataset.index = index;
         card.style.animationDelay = `${index * 0.05}s`;
-
-        const front = document.createElement('div');
-        front.className = 'card-face card-front';
-        front.textContent = '❓';
-
-        const back = document.createElement('div');
-        back.className = 'card-face card-back';
-        back.textContent = symbol;
-
-        card.appendChild(front);
-        card.appendChild(back);
+        card.symbol = symbol;
+        card.textContent = '❓';
 
         card.addEventListener('click', () => this.flipCard(card));
 
@@ -101,6 +92,7 @@ class MemoryGame {
         if (card.classList.contains('matched')) return;
 
         card.classList.add('flipped');
+        card.textContent = card.symbol;
         this.flippedCards.push(card);
 
         if (this.flippedCards.length === 2) {
@@ -140,6 +132,8 @@ class MemoryGame {
         setTimeout(() => {
             card1.classList.remove('flipped');
             card2.classList.remove('flipped');
+            card1.textContent = '❓';
+            card2.textContent = '❓';
             this.flippedCards = [];
             this.lockBoard = false;
         }, 1000);
