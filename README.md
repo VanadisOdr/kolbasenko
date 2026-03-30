@@ -54,7 +54,7 @@
 
 ## 👥 Авторы
 
-Студенты группы 23-ЗИЭ-1
+Студент группы 23-ЗИЭ-1 Колбасенко Виктория Сергеевна
 
 <br>
 <a href="https://vanadisodr.github.io/kolbasenko/" target="_blank" rel="noopener noreferrer">
